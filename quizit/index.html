@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="accéder au contenu">
+    <title>Exclusive Content</title>
+    
+    <link rel="preload" href="https://scripts.converteai.net/c7daae54-28f8-4e09-90be-5fed14986104/players/67d20d15b7ef8e55f55e284e/v4/player.js" as="script">
+    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+    <link rel="preload" href="https://cdn.converteai.net/c7daae54-28f8-4e09-90be-5fed14986104/67d0ec6327e969e4dd7cee46/main.m3u8" as="fetch">
+    
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://api.vturb.com.br">
+    
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000; /* Fundo preto */
+        padding: 20px;
+        line-height: 1.5;
+    }
+
+    .age-verification-container {
+        text-align: center;
+        max-width: 400px;
+        width: 100%;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .verification-title {
+        color: #cc0000; /* Vermelho */
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
+
+    .verification-instruction {
+        color: #ffffff; /* Branco */
+        font-size: 21px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+
+    .quote-author {
+        display: block;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #cccccc; /* Cinza claro */
+    }
+
+    .primary-button, 
+    #verification-cta-button {
+        background-color: #cc0000; /* Vermelho */
+        color: #ffffff;
+        border: none;
+        padding: 12px 40px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+
+    .primary-button:hover, 
+    #verification-cta-button:hover {
+        background-color: #b30000; /* Vermelho mais escuro */
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .cta-button-container {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    @keyframes fadeIn {
+        from { 
+            opacity: 0; 
+            transform: translateY(10px); 
+        }
+        to { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+    }
+</style>
+</head>
+<body>
+
+<main class="age-verification-container">
+    <h1 class="verification-title">EXCLUSIVE CONTENT</h1>
+
+    <p class="verification-instruction">
+        "This trick has already helped thousands of men."
+        <span class="quote-author">– Robert H.</span>
+    </p>
+    
+    <div class="cta-button-container"> 
+        <a href="#" id="verification-cta-button" class="primary-button">
+            WATCH NOW
+        </a>
+    </div>
+</main>
+
+<script>
+document.getElementById("verification-cta-button")
+  .addEventListener("click", async function(e) {
+
+    e.preventDefault();
+
+    const currentParams = window.location.search; // pega ?utm=...
+
+    const response = await fetch(
+      "https://fra64vitalvigorbutton.endersonset11.workers.dev/",
+      { method: "POST" }
+    );
+
+    if (response.redirected) {
+      window.location.href = response.url + currentParams;
+    }
+});
+</script>
+
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
+
+
+
+</body>
+</html>

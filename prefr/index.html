@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<!-- TikTok Pixel Code Start -->
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('D6FBTPBC77U3BV5J84KG');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+<!-- TikTok Pixel Code End -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accéder au contenu">
+    <title>Contenu Exclusif</title>
+    
+    <link rel="preload" href="https://scripts.converteai.net/c7daae54-28f8-4e09-90be-5fed14986104/players/67d20d15b7ef8e55f55e284e/v4/player.js" as="script">
+    <link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer-wc/v4/smartplayer.js" as="script">
+    <link rel="preload" href="https://cdn.converteai.net/c7daae54-28f8-4e09-90be-5fed14986104/67d0ec6327e969e4dd7cee46/main.m3u8" as="fetch">
+    
+    <link rel="dns-prefetch" href="https://cdn.converteai.net">
+    <link rel="dns-prefetch" href="https://scripts.converteai.net">
+    <link rel="dns-prefetch" href="https://images.converteai.net">
+    <link rel="dns-prefetch" href="https://api.vturb.com.br">
+    
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #000000;
+        padding: 20px;
+        line-height: 1.5;
+    }
+
+    .age-verification-container {
+        text-align: center;
+        max-width: 400px;
+        width: 100%;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .verification-title {
+        color: #cc0000;
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        line-height: 1.3;
+    }
+
+    .verification-instruction {
+        color: #ffffff;
+        font-size: 21px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+
+    .quote-author {
+        display: block;
+        margin-top: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #cccccc;
+    }
+
+    .primary-button, 
+    #verification-cta-button {
+        background-color: #cc0000;
+        color: #ffffff;
+        border: none;
+        padding: 12px 40px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+        text-transform: uppercase;
+        transition: all 0.3s ease;
+        display: inline-block;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+
+    .primary-button:hover, 
+    #verification-cta-button:hover {
+        background-color: #b30000;
+        transform: translateY(-2px);
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+
+    .cta-button-container {
+        max-width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px;
+    }
+
+    @keyframes fadeIn {
+        from { 
+            opacity: 0; 
+            transform: translateY(10px); 
+        }
+        to { 
+            opacity: 1; 
+            transform: translateY(0); 
+        }
+    }
+</style>
+</head>
+<body>
+
+<main class="age-verification-container">
+    <h1 class="verification-title">CONTENU EXCLUSIF</h1>
+
+    <p class="verification-instruction">
+        « Cette astuce a déjà aidé des milliers d’hommes. »
+        <span class="quote-author">– Michel S.</span>
+    </p>
+    
+    <div class="cta-button-container"> 
+        <a href="#" id="verification-cta-button" class="primary-button">
+            REGARDER MAINTENANT
+        </a>
+    </div>
+</main>
+
+<script>
+document.getElementById("verification-cta-button")
+  .addEventListener("click", async function(e) {
+
+    e.preventDefault();
+
+    const currentParams = window.location.search;
+
+    const response = await fetch(
+      "https://br20extrafr.endersonset11.workers.dev/",
+      { method: "POST" }
+    );
+
+    if (response.redirected) {
+      window.location.href = response.url + currentParams;
+    }
+});
+</script>
+
+<script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-subids async defer></script>
+
+</body>
+</html>
